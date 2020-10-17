@@ -1,4 +1,4 @@
-# PNEWS_APP
+# NEWS_APP
 
 ## Author
 
