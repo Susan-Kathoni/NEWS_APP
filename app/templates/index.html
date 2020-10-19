@@ -1,2 +1,18 @@
-<!-----------------------------Add a variable block-->
-<h1> {{ message }}  </h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <!-----------Checks if a title variable has been provided for the template------------->
+        {% if title %}
+        <title> {{ title }}</title>
+        <!-------------If a title is not provided, a default title is used instead-->
+        {% else %}
+        <title>Welcome to The best News Website.</title>
+        {% endif %}
+    </head>
+    <body>
+
+
+
+    </body>
+</html>
