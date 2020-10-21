@@ -13,10 +13,13 @@ The application lets a user to see various news sources on the homepage of the a
 1. Python 3.8.2
 2. Git
 3. Flask
+4. Python pip
+5. Bootstrap
 
 ## Features
 
 A user can:
+
 - See various news sources on the application's homepage.
 - Select a news source.
 - See all news articles from the selected news source.
@@ -39,8 +42,8 @@ A user can:
 ## Dependencies
 
 1. Stack overflow
-2. Youtube - 
-3. w3schools - 
+2. Youtube - https://youtu.be/I5syfw5zgnc
+3. w3schools
 
 ## Known Bugs
 
