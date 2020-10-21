@@ -1,0 +1,15 @@
+{% macro displayNewsArticleList(News_article_list) %}
+
+    {% for news_article in News_article_list %}
+        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 news_article-card"> 
+            <img src="{{ news_article.poster }}" alt="{{news_article.title }} poster" class="img-responsive">
+            <li class = "text-ceter">
+                <a href = "/news_article/{{news_article.title}}">
+<!------Add truncate filter to variable block to modify block's content-->           
+            {{ news_article.title|truncate(10)}}</a>
+            </li>
+        </div>
+        
+    {% endfor %}
+
+{% endmacro %}

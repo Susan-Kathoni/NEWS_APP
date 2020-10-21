@@ -1,1 +1,24 @@
-<h1> Daily News {{ id }} </h1>
+{% extends 'base.html'%}
+<!-- Content block -->
+{% block content %}
+<div class="container">
+
+    <!-- Poster background -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{news_article.poster}}) no-repeat center center">
+            <h3>{{ news_article.title }}</h3>
+            <h4>{{news_article.source}}</h4>
+            <h5>{{news_article.author}}</h5>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 news_article-details">
+            <p class="description"> {{ news_article.description}}</p>
+            <p class="publishedAt"> {{ news_article.publishedAt}}</p>
+            <p class="url"> {{ news_article.url}}</p>
+            <p class="urlToImage"> {{ news_article.urlToImage}}</p>
+            <p class="content"> {{ news_article.content}}</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
