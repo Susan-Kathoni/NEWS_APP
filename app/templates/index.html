@@ -1,41 +1,26 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
-
-<!-- Styles block -->
-
 {% block styles%}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
-
-<!-- Content block -->
 {% block content %}
-
 <div class="container">
-    <form>
-        <input type="text" name="news_article_query" placeholder="Search for a Movie" class="form-control">
-        <input type="submit"  value="Submit" class="btn btn-default">
-    </form> 
-</div>  
-<!-- Trending news section  -->
-<h3> Trending news</h3>
-<ul>
-{{ macro.displayNewsArticleList(trending)}}
-</ul>
-
-<!----Developing news section---->
-<h3> Developing news</h3>
-<ul>
-    {{ macro.displayNewsArticleList(developing)}}
-</ul>
-
-<!----Now_showing news section----> 
-<h3> Developing news</h3>   
-<ul>
-    {{ macro.displayNewsArticleList(now_showing)}}  
-</ul>
-
+    <div class="row">
+        <h3> Business Sources</h3>
+        <div class="row">{{ macro.displayNewsSources(business_sources)}}</div>
+    </div>
+    <div class="row">
+        <h3> Sports Sources</h3>
+        <div class="row">{{ macro.displayNewsSources(sports_sources)}}</div>
+    </div>
+    <div class="row">
+        <h3> Technology Sources</h3>
+        <div class="row">{{ macro.displayNewsSources(technology_sources)}}</div>
+    </div>
+    <div class="row">
+        <h3> Entertainment Sources</h3>
+        <div class="row">{{ macro.displayNewsSources(entertainment_sources)}}</div>
+    </div>
+</div>
 {% endblock%}
-       
-
-    
