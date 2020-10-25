@@ -21,6 +21,7 @@ fasteners==0.14.1
 Flask==1.1.2
 Flask-Bootstrap==3.3.7.1
 Flask-Script==2.0.6
+Flask-SQLAlchemy==2.4.4
 Flask-WTF==0.14.3
 future==0.18.2
 gunicorn==20.0.4
@@ -50,6 +51,7 @@ paramiko==2.6.0
 pexpect==4.6.0
 Pillow==7.0.0
 protobuf==3.6.1
+psycopg2==2.8.6
 pycairo==1.16.2
 pycups==1.9.73
 PyGObject==3.36.0
@@ -71,6 +73,7 @@ requests-unixsocket==0.2.0
 SecretStorage==2.3.1
 simplejson==3.16.0
 six==1.14.0
+SQLAlchemy==1.3.20
 systemd-python==234
 toml==0.10.1
 ubuntu-advantage-tools==20.3
