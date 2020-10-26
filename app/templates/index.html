@@ -1,22 +1,23 @@
 {% extends 'base.html'%} {% import 'macros.html' as macro%} {% block styles%} {{
 super() }}
+<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" />
 {% endblock %} {% block content %}
-<div class="container" style="background-color: indianred;" >
+<div class="container" style="background-color: violet;" >
   <div class="row">
-    <h3>Business Sources</h3>
+    <h3><strong>BUSINESS NEWS</strong></h3>
     <div class="row">{{ macro.displayNewsSources(business_sources)}}</div>
   </div>
   <div class="row">
-    <h3>Sports Sources</h3>
+    <h3><strong>SPORTS NEWS</strong></h3>
     <div class="row">{{ macro.displayNewsSources(sports_sources)}}</div>
   </div>
   <div class="row">
-    <h3>Technology Sources</h3>
+    <h3><strong>TECHNOLOGY NEWS</strong></h3>
     <div class="row">{{ macro.displayNewsSources(technology_sources)}}</div>
   </div>
   <div class="row">
-    <h3>Entertainment Sources</h3>
+    <h3><strong>ENTERTAINMENT NEWS</strong></h3>
     <div class="row">{{ macro.displayNewsSources(entertainment_sources)}}</div>
   </div>
 </div>

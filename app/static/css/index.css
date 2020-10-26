@@ -17,5 +17,6 @@ footer {
   object-fit: cover;
 }
 body{
-  background-color: blue;
+  background-color: grey;
+  font-family: 'Aladin', cursive;
 }
