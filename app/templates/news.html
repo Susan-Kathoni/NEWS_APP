@@ -1,26 +1,26 @@
-{% extends 'base.html'%}
-{% block content%}
+{% extends 'base.html'%} {% block content%}
 <div class="container">
   <h3>Articles</h3>
   {% for article_row in articles | batch(4)%}
   <div class="row">
     {% for article in article_row %}
     <div class="col-md-3">
-      
-      <div class="card" style="width: 18rem;">
-        <img src="{{article.pathToImage}}" class="card-img-top" style="height: 18vh;" alt="...">
+      <div class="card" style="width: 18rem">
+        <img
+          src="{{article.pathToImage}}"
+          class="card-img-top"
+          style="height: 18vh"
+          alt="..."
+        />
         <div class="card-body">
           <h5 class="card-title">{{article.title}}</h5>
           <p class="card-text">{{article.description | truncate(50)}}</p>
           <a href="{{article.url}}" class="btn btn-primary">Read Article</a>
         </div>
         <div class="card-footer">
-            <small>
-                {{article.datePublished}}
-            </small>
+          <small> {{article.datePublished}} </small>
         </div>
       </div>
-
     </div>
     {% endfor %}
   </div>
