@@ -13,10 +13,8 @@ footer {
   object-fit: cover;
 }
 body{
-    background-color: #cdedfd;
-    background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    background-color: grey;
     font-family: 'Aladin', cursive;
-    font-size: 50vh;
 }
 
 h5{

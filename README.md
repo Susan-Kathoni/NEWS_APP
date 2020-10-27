@@ -47,7 +47,7 @@ A user can:
 
 ## Known Bugs
 
-There are no known bugs at the moment but more tests are currently being run.
+The app does not display the footer section.
 
 ## Contact Details
 
