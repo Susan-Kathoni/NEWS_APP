@@ -1,4 +1,4 @@
-{% extends 'base.html'%} {% import 'macros.html' as macro%} {% block styles%} {{
+{% extends 'base.html'%} {% import 'macros.html' as macro%} {% import 'footer.html' as footer%} {% block styles%} {{
 super() }}
 <link
   href="https://fonts.googleapis.com/css2?family=Aladin&display=swap"
@@ -25,3 +25,7 @@ super() }}
   </div> 
 </div>
 {% endblock%}
+<!--- Footer block -->
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}
