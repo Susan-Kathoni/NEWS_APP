@@ -1,10 +1,15 @@
 {% macro displayNewsSources(News_sources) %} {% for source in News_sources %}
-<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 news_article-card" style="height: 50vh;">
-  <h4>{{ source.name|truncate(10)}}</h4>
-  <p class="text-center">{{source.description}}</p>
-  <p>
-    <a href="/sources/{{source.id}}">View article here. </a>
-  </p>
+<div class="col-xs-12 col-sm-4 col-md-3 pt-3" style="height: 50vh">
+<div class="card">
+  <h5 class="card-header">{{ source.name}}</h5>
+  <div class="card-body">
+    <p class="card-text">{{source.description|truncate(50)}}</p>
+    
+  </div>
+  <div class="card-footer">
+    <a href="/sources/{{source.id}}" class="btn btn-primary" target="_blank"><b>Read article here.</b></a>
+  </div>
+</div>
 </div>
 
 {% endfor %} {% endmacro %}
