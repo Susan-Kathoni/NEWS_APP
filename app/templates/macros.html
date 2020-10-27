@@ -1,9 +1,20 @@
 {% macro displayNewsSources(News_sources) %} {% for source in News_sources %}
 <div class="col-xs-12 col-sm-4 col-md-3 pt-3" style="height: 50vh">
-  <div class="card">
-    <h5 class="card-header">{{ source.name}}</h5>
+  <div
+    class="card"
+    style="
+      background-color: #cdedfd;
+      background-image: linear-gradient(
+        319deg,
+        #cdedfd 0%,
+        #ffec82 37%,
+        #ffcfd2 100%
+      );
+    "
+  >
+    <h5 class="card-header" style="font-size: 30px">{{ source.name}}</h5>
     <div class="card-body">
-      <p class="card-text">{{source.description|truncate(250)}}</p>
+      <p class="card-text" style="font-size: 20px;">{{source.description|truncate(240)}}</p>
     </div>
     <div class="card-footer">
       <a href="/sources/{{source.id}}" class="btn btn-primary" target="_blank"
@@ -11,6 +22,11 @@
       >
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
+
 
 {% endfor %} {% endmacro %}
