@@ -56,6 +56,11 @@ Kindly reach out to me via email: kathonisusan@gmail.com
 
 ## License
 
-[MIT](https://github.com/Susan-Kathoni/NEWS_APP/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Susan-Kathoni/NEWS_APP/blob/master/LICENSE)
+
+
+## Codebeat
+
+[![codebeat badge](https://codebeat.co/badges/7bbb17b5-2cde-4108-aac0-eefcd439cf9f)](https://codebeat.co/projects/github-com-ephread-instructions)
 
 © [Susan Kathoni](https://github.com/Susan-Kathoni)
